@@ -1,10 +1,13 @@
-For Kernel 4.15.x ~ 5.17.x (Linux Mint, Ubuntu or Debian Derivatives)
+This is my fork that I've tested on Armbian builds.
+
+
+For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
 
 ------------------
 
 ## How to install (for arm devices)
 
-`sudo ln -s /lib/modules/$(uname -r)/build/arch/arm /lib/modules/$(uname -r)/build/arch/armv7l`
+`sudo ln -s /lib/modules/$(uname -r)/build/arch/arm /lib/modules/$(uname -r)/build/arch/$(uname -m)`
 
 `sudo apt-get install build-essential git dkms linux-headers-$(uname -r)`
 
