@@ -1,4 +1,4 @@
-This is my fork that I've tested on Armbian builds.
+This is my fork that I've tested on Armbian builds. It currently works on current and edge releases. ARM32 and ARM64 supported.
 
 
 For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
