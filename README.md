@@ -11,7 +11,7 @@ For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
 
 `sudo apt-get install build-essential git dkms linux-headers-$(uname -r)`
 
-`git clone -b arm https://github.com/kelebek333/rtl8188fu rtl8188fu-arm`
+`git clone -b arm https://github.com/sgjava/rtl8188fu rtl8188fu-arm`
 
 `sudo dkms add ./rtl8188fu-arm`
 
