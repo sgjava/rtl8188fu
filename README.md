@@ -7,10 +7,6 @@ For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
 
 ## How to install (for arm devices)
 
-* ARM32 
-    * `sudo ln -s /lib/modules/$(uname -r)/build/arch/arm /lib/modules/$(uname -r)/build/arch/$(uname -m)`
-* ARM64
-    * `sudo ln -s /lib/modules/$(uname -r)/build/arch/arm64 /lib/modules/$(uname -r)/build/arch/$(uname -m)`
 * Armbian to get matching kernel headers
     * `sudo sed -i 's/apt./beta./g' /etc/apt/sources.list.d/armbian.list`
     * `sudo apt update`
@@ -19,6 +15,10 @@ For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
     * `sudo apt install linux-headers-edge-$LINUXFAMILY`
 * Non-Armbian
     * `sudo apt-get install build-essential git dkms linux-headers-$(uname -r)`
+* ARM32 
+    * `sudo ln -s /lib/modules/$(uname -r)/build/arch/arm /lib/modules/$(uname -r)/build/arch/$(uname -m)`
+* ARM64
+    * `sudo ln -s /lib/modules/$(uname -r)/build/arch/arm64 /lib/modules/$(uname -r)/build/arch/$(uname -m)`
 * `git clone -b arm https://github.com/sgjava/rtl8188fu rtl8188fu-arm`
 * `sudo dkms add ./rtl8188fu-arm`
 * `sudo dkms build rtl8188fu/1.0`
