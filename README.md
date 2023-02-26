@@ -1,10 +1,19 @@
 This is my fork that I've tested on Armbian builds. It currently works on current and edge releases. ARM32 and ARM64 supported.
+Please make sure you test this on a new install before trying it on something you've got 
+a lot of time invested in. Don't blame me if you hose your distro.
 
 For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
 
 ------------------
 
 ## How to install (for arm devices)
+
+If you are lazy I've added a script that can be run with:
+* `git clone -b arm https://github.com/sgjava/rtl8188fu rtl8188fu-arm`
+*  `./rtl8188fu-arm/scripts/install.sh`
+
+This first removes any existing rtl8188fu install based on this script or the instructions 
+below. Then you can reuse script with new kernels.
 
 * Armbian to get matching kernel headers
     * `sudo sed -i 's/apt./beta./g' /etc/apt/sources.list.d/armbian.list`
