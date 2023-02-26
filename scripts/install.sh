@@ -6,7 +6,7 @@
 #
 # Install RTL8188FU driver on Armbian.
 #
-# Change variables below to suit your needs.
+# This assumes you cloned into home dir.
 #
 # Steven P. Goldsmith
 # sgjava@gmail.com
@@ -14,9 +14,6 @@
 
 # Get architecture
 arch=$(uname -m)
-
-# Temp dir for downloads, etc.
-tmpdir="$HOME/temp"
 
 # stdout and stderr for commands logged
 logfile="$PWD/install.log"
@@ -60,9 +57,6 @@ elif [ "$arch" = "x86_64" ]; then
     sudo -E ln -s /lib/modules/$(uname -r)/build/arch/x86_64 /lib/modules/$(uname -r)/build/arch/"$arch" >> $logfile 2>&1
 fi
 
-# Clone project
-log "Cloning project"
-git clone -b arm https://github.com/sgjava/rtl8188fu rtl8188fu-arm >> $logfile 2>&1
 # Build project
 log "Building"
 sudo -E dkms add ./rtl8188fu-arm >> $logfile 2>&1
