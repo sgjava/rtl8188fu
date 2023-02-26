@@ -6,3 +6,5 @@
 *.swp
 *.ko
 *.mod.c
+.project
+.settings/
