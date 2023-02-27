@@ -38,9 +38,9 @@ log "Remove modules link"
 log "Switch to Armbian beta repos"
 sudo -E sed -i 's/apt./beta./g' /etc/apt/sources.list.d/armbian.list >> $logfile 2>&1
 sudo -E apt update >> $logfile 2>&1
-sudo -E apt upgrade >> $logfile 2>&1
+sudo -E apt -y upgrade  >> $logfile 2>&1
 . /etc/armbian-release >> $logfile 2>&1
-sudo -E apt install linux-headers-edge-$LINUXFAMILY >> $logfile 2>&1
+sudo -E apt -y  install linux-headers-edge-$LINUXFAMILY >> $logfile 2>&1
 
 log "Create modules link"
 # ARM 32
