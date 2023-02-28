@@ -9,6 +9,7 @@ For Kernel 4.15.x ~ 6.1.x (Linux Mint, Ubuntu or Debian Derivatives)
 ## How to install (for arm devices)
 
 If you are lazy I've added a script that can be run with:
+* Make sure you reboot at least once before install, so /etc/armbian-release is set.
 * `git clone -b arm https://github.com/sgjava/rtl8188fu rtl8188fu-arm`
 *  `./rtl8188fu-arm/scripts/install.sh`
 
