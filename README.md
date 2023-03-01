@@ -21,7 +21,7 @@ below. Then you can reuse script with new kernels.
     * `sudo apt update`
     * `sudo apt upgrade`
     * `source /etc/armbian-release`
-    * `sudo apt install linux-headers-edge-$LINUXFAMILY`
+    * `sudo apt install linux-headers-$BRANCH-$LINUXFAMILY`
 * Non-Armbian
     * `sudo apt-get install build-essential git dkms linux-headers-$(uname -r)`
 * ARM32 
